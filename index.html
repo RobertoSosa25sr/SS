@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación en Ciberseguridad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Educación en Ciberseguridad</h1>
+    </header>
+    <main>
+        <section id="info-section" class="info">
+            <h2>¿Qué es el phishing?</h2>
+            <p>El phishing es una técnica de ingeniería social que busca engañar a las personas para que revelen información confidencial como contraseñas, números de tarjetas de crédito o datos personales. Esto se hace generalmente mediante correos electrónicos o mensajes falsos que parecen provenir de una fuente confiable.</p>
+
+            <h2>¿Qué es el malware?</h2>
+            <p>El malware (software malicioso) incluye virus, gusanos, troyanos y otros programas diseñados para dañar, interrumpir o acceder a sistemas no autorizados. El malware puede robar datos, espiar actividades o incluso tomar el control total de un dispositivo.</p>
+
+            <h2>¿Qué es el ransomware?</h2>
+            <p>El ransomware es un tipo de malware que cifra los archivos en un dispositivo, haciendo imposible acceder a ellos hasta que se pague un rescate. Este tipo de ataque puede afectar tanto a individuos como a empresas.</p>
+
+            <h2>Consejos básicos de ciberseguridad:</h2>
+            <ul>
+                <li>No hagas clic en enlaces de correos sospechosos o no solicitados.</li>
+                <li>Usa contraseñas fuertes y únicas para cada cuenta.</li>
+                <li>Mantén tu software y sistema operativo actualizados.</li>
+                <li>Instala un software antivirus confiable y manténlo activo.</li>
+                <li>Haz copias de seguridad regulares de tus datos importantes.</li>
+            </ul>
+        </section>
+
+        <button id="start-quiz">Iniciar evaluación</button>
+
+        <section id="quiz-section" class="hidden">
+            <form id="quiz-form">
+                <h2>Evaluación de ciberseguridad</h2>
+                <div>
+                    <p>1. ¿Qué es el phishing?</p>
+                    <label><input type="radio" name="q1" value="correcto"> Una técnica para obtener información confidencial</label><br>
+                    <label><input type="radio" name="q1" value="incorrecto"> Un tipo de malware</label>
+                </div>
+                <div>
+                    <p>2. ¿Qué es el malware?</p>
+                    <label><input type="radio" name="q2" value="correcto"> Software malicioso</label><br>
+                    <label><input type="radio" name="q2" value="incorrecto"> Una técnica de ingeniería social</label>
+                </div>
+                <div>
+                    <p>3. ¿Qué hace el ransomware?</p>
+                    <label><input type="radio" name="q3" value="correcto"> Bloquea o cifra datos</label><br>
+                    <label><input type="radio" name="q3" value="incorrecto"> Espía actividades en línea</label>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>Resultados</h2>
+            <p id="result-text"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
